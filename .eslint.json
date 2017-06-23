@@ -1,0 +1,45 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        },
+        "sourceType": "module"
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "rules": {
+        "array-bracket-spacing": ["error", "never"],
+        "arrow-spacing": "error",
+        "block-spacing": "error",
+        "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+        "comma-dangle": "error",
+        "comma-spacing": "error",
+        "comma-style": "error",
+        "curly": ["error", "multi", "consistent"],
+        "eol-last": "error",
+        "indent": ["error", 2, { "SwitchCase": 1 }],
+        "key-spacing": ["error"],
+        "keyword-spacing": ["error", { "before": true, "after": true }],
+        "linebreak-style": ["error", "unix"],
+        "no-console": "warn",
+        "no-trailing-spaces": "error",
+        "no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+        "object-curly-newline": ["error", { "multiline": true }],
+        "object-curly-spacing": ["error", "always"],
+        "padded-blocks": ["error", "never"],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "semi": ["error", "never"],
+        "space-before-blocks": "error",
+        "space-in-parens": "error"
+    },
+    "plugins": [
+        "react"
+    ]
+}
