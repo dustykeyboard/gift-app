@@ -2,4 +2,30 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #aaa;
 }
+
+#app {
+  margin: 1em auto;
+  padding: 1em;
+  max-width: 34em;
+  background: #eee;
+}
+
+h1 {
+  font-size: 1.2em;
+  margin: 0 0 .5em;
+}
+
+.page_meta {
+  font-size: 1em;
+  margin: 0 0 1em;
+  padding: 1em 0 0;
+  border-top: 1px solid black;
+  display: flex;
+}
+
+h2 { margin: 0 }
+
+.clickable { cursor: pointer }
+.clickable:hover { opacity: .7 }

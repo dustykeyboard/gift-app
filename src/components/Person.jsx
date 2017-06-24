@@ -4,7 +4,10 @@ import PropTypes from 'prop-types'
 class Person extends Component {
   render() {
     return (
-      <li onClick={() => this.props.clickHandler(this.props.person.url)}>
+      <li
+        onClick={() => this.props.clickHandler(this.props.person.url)}
+        className='clickable'
+      >
         {this.props.person.name}
       </li>
     )

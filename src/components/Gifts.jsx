@@ -6,11 +6,15 @@ import Person from './Person'
 class Gifts extends Component {
   render() {
     return (
-      <div>
-        <h1>
-          <span onClick={this.props.goBack}>&larr;</span>
-          Gifts for {this.props.person.name}
-        </h1>
+      <div className='page'>
+        <div className='page_meta'>
+          <h2 className='page_name'>
+            {this.props.person.name}
+          </h2>
+          <span className='actions'>
+            <span onClick={this.props.goBack} className='clickable'>&times;</span>
+          </span>
+        </div>
         {this.props.giftsForPerson.map(gift => (
           <Gift
             key={gift.id}

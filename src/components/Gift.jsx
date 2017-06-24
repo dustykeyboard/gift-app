@@ -7,7 +7,11 @@ class Gift extends Component {
       <li onClick={() => this.props.clickHandler(this.props.gift.id)}>
         {this.props.gift.name}
         {this.props.gift.url ? (
-          <a href={this.props.gift.url} target='_blank'>↗</a>
+          <a
+            href={this.props.gift.url}
+            className='clickable'
+            target='_blank'
+          >↗</a>
         ) : ''}
       </li>
     )
