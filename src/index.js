@@ -12,6 +12,8 @@ import reducers from './reducers'
 import sagas from './sagas'
 
 import registerServiceWorker from './registerServiceWorker'
+
+import App from './components/App'
 import './index.css'
 
 registerServiceWorker()
@@ -29,7 +31,7 @@ sagaMiddleware.run(sagas)
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-          <div>
+          <App>
             {routes.map((route, index) => (
                 <Route
                     key={index}
@@ -39,7 +41,7 @@ ReactDOM.render(
                     render={props => <route.component {...props} />}
                 />
             ))}
-          </div>
+          </App>
         </ConnectedRouter>
     </Provider>,
     document.getElementById('root')
