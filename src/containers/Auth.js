@@ -8,7 +8,7 @@ const mapStateToProps = (state, ownProps) => {
   const personUrl = ownProps.match.params.personUrl
   const { people, gifts } = state
   return {
-    person: people.find(person => person.id === personUrl),
+    person: people.find(person => person.url === personUrl),
     gifts: gifts.filter(gift => gift.person === personUrl)
   }
 }
